@@ -1,4 +1,128 @@
 body {
-  background-color: #dadada;
-  font-size: 10px;
+  background-color: #dbd9dc;
+  font-size: 20px;
 }
+
+.row {
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.column {
+  margin-bottom: 20px;
+}
+
+.column .card {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.card > img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+h1 {
+  font-family: Tahoma;
+  font-size: 19px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 30px;
+  line-height: 10px;
+ }
+
+.card > h1 {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 100%;
+}
+
+.card > h2 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 100%;
+    font-weight: bold;
+  }
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container .header {
+  text-align: center;
+  font-size: 14px;
+  padding: 20px;
+  text-transform: uppercase;
+}
+
+/* On mobile first approach, its one column by default. */
+
+/*Add a media query to display a 2 column design - tablet devices.*/
+@media screen and (min-width: 575px) {
+  .column {
+    margin: 1%;
+    width: 48%;
+    float: left;
+    }
+
+@media screen and (min-width: 575px) {
+  .container {
+    width: 85%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 575px) {
+.column .card {
+  width: 100%;
+  height: 200px;
+  position: relative;
+ }
+}
+
+@media screen and (min-width: 575px) {
+.card > img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+}
+
+
+/*Add a media query to display a 4 column design - larger devices (like laptops)*/
+@media screen and (min-width: 992px) {
+  .column {
+    width: 23%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+      width: 85%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 992px) {
+.column .card {
+  width: 100%;
+  height: 200px;
+  position: relative;
+ }
+}
+
+@media screen and (min-width: 992px) {
+.card > img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+}
+/*Make sure none of the images presented are stretched by the resizing of your browser.
+*/
